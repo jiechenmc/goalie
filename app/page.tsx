@@ -8,7 +8,7 @@ export default function Home() {
   const goals = [{ 'title': "Read 20 pages of a book", "duration": 12, "completed": 8 }, { 'title': "Touch grass", "duration": 12, "completed": 4 }]
 
   return (
-    <main className="flex min-h-screen flex-col p-24 ">
+    <main className="flex min-h-screen flex-col">
       <h1>Hi {user.name}</h1>
       <div>
         <h4>Your Progress</h4>

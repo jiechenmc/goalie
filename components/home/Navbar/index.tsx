@@ -13,7 +13,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Navbar = () => {
     const navItems = [{ 'path': '/', display: 'Home' }, { 'path': '/goals', display: 'Goals' }, { 'path': '/journey', display: 'Journey' }, { 'path': '/community', display: 'Community' }]
-    return <div className="flex justify-between px-16 py-4">
+    return <div className="flex justify-between px-16 pt-4">
         <div className="text-lg font-semibold flex">
             <Goal />
             Goalie
