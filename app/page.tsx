@@ -1,6 +1,7 @@
 
 import { CustomLineChart } from "@/components/dashboard/Chart";
 import Stat from "@/components/dashboard/Stat"
+import { TypographyH1, TypographyH2 } from "@/components/typography/typography";
 
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col">
-      <h1>Hi {user.name}</h1>
+      <TypographyH1 text="Hi Jie" />
       <div>
-        <h4>Your Progress</h4>
+        <TypographyH2 text="Your Progress" />
         <CustomLineChart />
       </div>
       <div className="flex justify-center gap-4">
@@ -20,7 +21,7 @@ export default function Home() {
         <Stat title="Current ranking" content="4/56" footer="0" />
       </div>
       <div>
-        <h4>Your Goals</h4>
+        <TypographyH2 text="Your Goals" />
         {goals.map((goal) =>
           <div key={goal.title} className="flex justify-between mt-4">
             <div>
